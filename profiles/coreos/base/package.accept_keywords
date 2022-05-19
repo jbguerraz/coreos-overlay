@@ -63,3 +63,5 @@
 =dev-vcs/git-2.35.3 ~amd64 ~arm64
 
 =sys-power/acpid-2.0.33 ~amd64 ~arm64
+
+=app-crypt/adcli-0.9.1-r2 ~amd64 ~arm64
