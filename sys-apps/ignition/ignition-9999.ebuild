@@ -67,4 +67,8 @@ src_compile() {
 
 src_install() {
 	newbin ${GOBIN}/internal ${PN}
+
+	systemd_dounit "${FILESDIR}/ignition-delete-config.service"
+	exeinto "/usr/libexec"
+	newexe ${GOBIN}/internal ignition-rmcfg
 }
